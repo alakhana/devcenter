@@ -161,6 +161,7 @@ var searchDocs = function(search, bookmark) {
       $('.search_count').text('Showing ' + count + ' of ' + total);
       $('#morebutton').css('visibility', hasMore ? 'visible' : 'hidden');
       $('#morebutton').data('bookmark', hasMore ? $('.table_basic > tbody > tr.docrow').last().data('bookmark') : null);
+      $('#docsearch_table').tablesort();
     })
     .fail(function(err) {
       renderMessage(err);

@@ -4,6 +4,11 @@
   font-style: italic;
 }
 
+a.muted {
+  color: #aaa !important;
+  text-decoration: none;
+}
+
 #editor {
   height: 60vh;
   width: 100%;

@@ -12,9 +12,8 @@
       td
         a.type_link(href="doc?id=#{d.id}") #{d.name}
       td
-        - if (d.status && d.status.toLowerCase() == "provisional") {
-          span.muted #{d.url}
-        - }
+        span.muted 
+          a.type_link(href=d.url, target="_doc").muted #{d.url}
    - }
    - else {
     tr.docrow
@@ -23,8 +22,7 @@
       td
         a.type_link(href="doc?id=#{d.id}") #{d.name}
       td
-        - if (d.status && d.status.toLowerCase() == "provisional") {
-          span.muted #{d.url}
-        - }
+        span.muted 
+          a.type_link(href=d.url, target="_doc").muted #{d.url}
    - }
 - }

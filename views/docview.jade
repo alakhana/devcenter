@@ -31,18 +31,14 @@ body.capped-layout
                 li
                   span.type_copy [#{d.key}] 
                   a.type_link(href="doc?id=#{d.id}") #{d.value.name}
-                  - if (d.key.toLowerCase() == "provisional") {
                     br
                     span.muted #{d.value.url}
-                  - }
               - }
               - else if (d.key.toLowerCase() == key.toLowerCase()) {
                 li
                   a.type_link(href="doc?id=#{d.id}") #{d.value.name}
-                  - if (key == "provisional") {
                     br
                     span.muted #{d.value.url}
-                  - }
                 - }
               - }
             - }

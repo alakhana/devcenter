@@ -37,10 +37,13 @@ body.capped-layout
               - }
               - else if (d.key.toLowerCase() == key.toLowerCase()) {
                 li
+                  - if (!d.value.name) {
+                      a.type_link(href="doc?id=#{d.id}").alert-container.warning(role="alert") MISSING TITLE
+                  - }
                   a.type_link(href="doc?id=#{d.id}") #{d.value.name}
-                    br
-                    span.muted
-                      a.type_link(href=d.value.url, target="_doc").muted #{d.value.url}
+                  br
+                  span.muted
+                    a.type_link(href=d.value.url, target="_doc").muted #{d.value.url} 
                 - }
               - }
             - }

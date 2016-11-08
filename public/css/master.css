@@ -77,6 +77,7 @@ hr {
 }
 
 .alert-container.warning {
+    color: #1E2739 !important;
     background: -webkit-repeating-linear-gradient(  145deg,  #FEF0A8,  #FEF0A8 1px,  #F6CC00 1px,  #F6CC00 3px);
     background: repeating-linear-gradient(  -55deg,  #FEF0A8,  #FEF0A8 1px,  #F6CC00 1px,  #F6CC00 3px);
     border-left: 2px solid #EFC100;
